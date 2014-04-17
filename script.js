@@ -1,19 +1,26 @@
 $(document).ready(function(){
-	    $(document).keydown(function(key) {
+	    $('.controller').keydown(function(key) {
         switch(parseInt(key.which,10)) {
-			case 37:
-				$('img').animate({left: "-=10px"}, 'fast');
+				
+			$('.left-btn').click(function(){
+				$(this).animate({left: "-=10px"}, 'fast');
 				break;
-			case 38:
-				$('img').animate({top: "-=10px"}, 'fast');
-				break;
-			case 39:
-				// Put our code here
-				$('img').animate({left: "+=10px"}, 'fast');
-				break;
-			case 40:
-				$('img').animate({top: "+=10px"}, 'fast');
-				break;
+			});
+
+			$('.up-btn').click(function(){
+				$(this).animate({top: "-=10px"}, 'fast');
+			break;
+			});
+			
+			$('.right-btn').click(function(){
+				$('this').animate({left: "+=10px"}, 'fast');
+			break;
+			});
+			
+			$('.down-btn').click(function(){
+			$('img').animate({top: "+=10px"}, 'fast');
+			break;
+			});
 		}
 	});
 	
