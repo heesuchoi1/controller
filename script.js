@@ -16,16 +16,21 @@ $(document).ready(function(){
 		$('#player').animate({top: "+=10px"}, 'fast');
 	});
 
-	$('.controller').keydown(function(key) {
+	$('body').keydown(function(key) {
 		switch(parseInt(key.which,10)) {
+		
 		case 37: //left
 			$('#player').animate({left: "-=10px"}, 'fast')
+			break;
 		case 38: //up
 			$('#player').animate({top: "-=10px"}, 'fast')
+			break;
 		case 39: //right
 			$('#player').animate({left: "+=10px"}, 'fast')
+			break;
 		case 40:
-			$('#player').animate({top:"+=10px"}, 'fast')	
+			$('#player').animate({top:"+=10px"}, 'fast')
+			break;	
 	}
 });
 	
