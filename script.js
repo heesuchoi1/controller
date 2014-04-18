@@ -5,7 +5,7 @@ $(document).ready(function(){
 	});
 
 	$('#up-btn').click(function(){
-		$('#player').animate({left: "-=10px"}, 'fast')
+		$('#player').animate({top: "-=10px"}, 'fast')
 	});
 
 	$('#right-btn').click(function(){
@@ -35,9 +35,9 @@ $(document).ready(function(){
 });
 	
 	$('#in-btn').click(function() {
-		$(this).fadeIn('fast');
+		$('#player').fadeIn('fast');
 	});
 	$('#out-btn').click(function() {
-		$(this).fadeOut('fast');
+		$('#player').fadeOut('fast');
 	});
 });
