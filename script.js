@@ -1,26 +1,31 @@
 $(document).ready(function(){
-	    $('.controller').keydown(function(key) {
-        switch(parseInt(key.which,10)) {
-				
-			$('#left-btn').click(function(){
-				$(this).animate({left: "-=10px"}, 'fast');
-				break;
+	   
+	   	$('#left-btn').click(function(){
+				$('#player').animate({left: "-=10px"}, 'fast');
 			});
 
 			$('#up-btn').click(function(){
-				$(this).animate({top: "-=10px"}, 'fast');
-			break;
+				$('#player').animate({top: "-=10px"}, 'fast');
 			});
 			
 			$('#right-btn').click(function(){
-				$('this').animate({left: "+=10px"}, 'fast');
-			break;
+				$('#player').animate({left: "+=10px"}, 'fast');
 			});
 			
 			$('#down-btn').click(function(){
-				$('this').animate({top: "+=10px"}, 'fast');
-			break;
+				$('#player').animate({top: "+=10px"}, 'fast');
 			});
+	   
+	    $('.controller').keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+		case 37: //left
+		
+		case 38: //up
+		
+		case 39: //right
+			
+		case 40:
+		
 		}
 	});
 	
