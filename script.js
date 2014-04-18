@@ -35,7 +35,7 @@ $(document).ready(function(){
 });
 	
 	$('#in-btn').click(function() {
-		$('#player').fadeIn('fast');
+		$('#player').fadein('fast');
 	});
 	$('#out-btn').click(function() {
 		$('#player').fadeOut('fast');
